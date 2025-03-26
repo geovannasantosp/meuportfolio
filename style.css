@@ -1,0 +1,126 @@
+/* Estilos Globais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: hwb(126 20% 68% / 0.498);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: hsl(107, 39%, 21%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar i {
+    margin-right: 50px;
+    font-size: 50px;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.container {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* Estilo para os cards */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 10px;
+}
+
+.card-header {
+    background-color:hsl(107, 39%, 21%);
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-bottom: 2px solid hsl(107, 39%, 21%);
+}
+
+.card-body {
+    padding: 15px;
+}
+
+/* Botões */
+.btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+}
+
+.btn-warning {
+    background-color: hsl(107, 38%, 21%);
+    border: none;
+    color: #333;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+/* Inputs e Labels */
+.form-check-label {
+    margin-left: 8px;
+    font-weight: 500;
+}
+
+/* Estilo para inputs marcados */
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+  background-color: #e00404;
+}
+
+input[type="text"] {
+    border-radius: 8px;
+    border: 2px solid #ced4da;
+    padding: 10px;
+}
+
+input[type="text"]:focus {
+    border-color: hsl(107, 39%, 21%);
+    outline: none;
+    box-shadow: 0 0 5px hsl(107, 39%, 21%);
+}
+
+/* Estilo da seção de imagens */
+img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .card-header {
+        font-size: 1rem;
+    }
+}
